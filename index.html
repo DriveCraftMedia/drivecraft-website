@@ -5,29 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DriveCraft Media</title>
 
+  <!-- Favicon (place favicon.png in the project root) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+
   <!-- Pro fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Sora:wght@500;700&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#0c1424" />
+  <meta name="theme-color" content="#0d1321" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="fade-in">
+<body>
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="wordmark" aria-label="DriveCraft Media">
-        <span class="logo-dot"></span> DriveCraft&nbsp;<b>Media</b>
-      </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a class="navlink" href="#services">Services</a>
-        <a class="navlink" href="#cases">Case Studies</a>
-        <a class="navlink" href="#about">About</a>
-        <a class="navlink" href="#faq">FAQ</a>
-        <a class="nav-cta" href="#contact">Contact</a>
+      <a href="#" class="wordmark" aria-label="DriveCraft Media">DriveCraft&nbsp;Media</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-
       <button class="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -35,7 +34,8 @@
   </header>
 
   <!-- ===== HERO (slider) ===== -->
-  <section id="top" class="hero" aria-label="DriveCraft Media">
+  <section class="hero" aria-label="DriveCraft Media">
+    <!-- Slides (non-duplicated images) -->
     <div class="hero-slide current" style="--bg:url('dealership-hero.jpg')"></div>
     <div class="hero-slide"         style="--bg:url('hero-1.jpg')"></div>
     <div class="hero-slide"         style="--bg:url('hero-2.jpg')"></div>
@@ -43,9 +43,8 @@
 
     <div class="hero-overlay">
       <div class="container hero-content">
-        <span class="eyebrow reveal">Social-first creative for dealerships</span>
         <h1 class="reveal">Driving Dealership Growth Worldwide</h1>
-        <p class="reveal">Instagram-first content and short-form video that turns attention into booked test drives and sales.</p>
+        <p class="reveal">Instagram-first creative, short-form video, and precision Meta ads that turn attention into test drives and sales.</p>
         <div class="hero-ctas reveal">
           <a href="#contact" class="btn btn-primary">Boost Your Business Today</a>
           <a href="#services" class="btn btn-ghost">See Services</a>
@@ -53,6 +52,7 @@
       </div>
     </div>
 
+    <!-- Clean, symmetrical dots -->
     <div class="hero-dots" aria-label="Hero slides" role="tablist">
       <button class="dot current" aria-label="Slide 1" role="tab"></button>
       <button class="dot" aria-label="Slide 2" role="tab"></button>
@@ -64,32 +64,29 @@
   <!-- ===== SERVICES ===== -->
   <section id="services" class="section">
     <div class="container">
-      <div class="section-head">
-        <h2 class="section-title reveal">Our Services</h2>
-        <p class="subtle reveal">Core moves that actually move cars. Clean, fast, measurable.</p>
-      </div>
+      <h2 class="section-title reveal">Our Services</h2>
 
       <div class="grid services-grid">
-        <article class="service card-glass reveal">
-          <div class="bubble-thumb" style="--img:url('content-creation.jpg')"></div>
+        <article class="service-card reveal">
+          <img class="service-img" src="content-creation.jpg" alt="Short-form video production" loading="lazy">
           <h3>Short-Form Video Production</h3>
-          <p>UGC-style reels/TikTok: inventory features, offers, hooks, captions, and platform-native cuts.</p>
+          <p>High-impact reels/TikTok: inventory features, hooks, captions, and platform-native cuts.</p>
         </article>
 
-        <article class="service card-glass reveal">
-          <div class="bubble-thumb" style="--img:url('hero-1.jpg')"></div>
+        <article class="service-card reveal">
+          <img class="service-img" src="hero-2.jpg" alt="Instagram rebuild" loading="lazy">
           <h3>Instagram Rebuild</h3>
           <p>Profile refresh, bio + highlights, grid polish, and story templates — handoff with playbook.</p>
         </article>
 
-        <article class="service card-glass reveal">
-          <div class="bubble-thumb" style="--img:url('team-strategy.jpg')"></div>
+        <article class="service-card reveal">
+          <img class="service-img" src="team-strategy.jpg" alt="Creative direction" loading="lazy">
           <h3>Creative Direction</h3>
           <p>Hooks, scripts, shot lists, pacing, and design so every second keeps people watching.</p>
         </article>
 
-        <article class="service card-glass reveal">
-          <div class="bubble-thumb" style="--img:url('happy-customer.jpg')"></div>
+        <article class="service-card reveal">
+          <img class="service-img" src="happy-customer.jpg" alt="Social proof engine" loading="lazy">
           <h3>Social Proof Engine</h3>
           <p>Delivery moments + testimonial shorts edited into high-trust content that converts.</p>
         </article>
@@ -100,120 +97,80 @@
   <!-- ===== CASE STUDIES ===== -->
   <section id="cases" class="section">
     <div class="container">
-      <div class="section-head">
-        <h2 class="section-title reveal">Case Studies</h2>
-        <p class="subtle reveal">Representative demos. Real metrics vary by market, inventory, and budget.</p>
-      </div>
-
+      <h2 class="section-title reveal">Case Studies</h2>
       <div class="grid cases-grid">
-        <article class="case card-glass reveal">
+        <article class="case reveal">
           <h3>Demo Dealer A</h3>
-          <ul class="green-ticks">
+          <ul>
             <li><strong>+214%</strong> Instagram reach in 30 days</li>
             <li><strong>36</strong> inbound DMs → <strong>12</strong> booked test drives</li>
-            <li><strong>Watch time</strong> up <strong>+37%</strong> via creative iteration</li>
+            <li><strong>CPM</strong> reduced by <strong>28%</strong></li>
           </ul>
         </article>
-
-        <article class="case card-glass reveal">
+        <article class="case reveal">
           <h3>Demo Dealer B</h3>
-          <ul class="green-ticks">
-            <li><strong>4.1x</strong> return on promo content</li>
+          <ul>
+            <li><strong>4.1x</strong> ROAS in month 1</li>
             <li><strong>58</strong> leads → <strong>19</strong> showroom visits</li>
             <li>Retargeting CTR up <strong>+62%</strong></li>
           </ul>
         </article>
-
-        <article class="case card-glass reveal">
+        <article class="case reveal">
           <h3>Demo Dealer C</h3>
-          <ul class="green-ticks">
+          <ul>
             <li><strong>+92%</strong> profile visits after IG rebuild</li>
             <li><strong>3–4</strong> reels/week kept engagement compounding</li>
-            <li>Brand search up <strong>+28%</strong></li>
+            <li>Avg. watch time up <strong>+37%</strong></li>
           </ul>
         </article>
       </div>
+      <p class="cases-note">*Representative demos. Metrics vary by market, inventory, and budget.</p>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section section-contrast">
-    <div class="container about-wrap reveal card-glass pad-up">
+    <div class="container about-wrap reveal">
       <h2>Why DriveCraft</h2>
-      <p>Based in Toronto, operating worldwide. Platform-native creativity + disciplined execution so your dealership wins locally and at scale.</p>
+      <p>Based in Toronto, operating worldwide. We blend platform-native creativity with data-driven execution so your dealership wins locally and at scale.</p>
       <ul class="ticks">
         <li>Scroll-stopping creative tailored to car buyers</li>
+        <li>Conversion-first Meta targeting & attribution</li>
         <li>Dealer-ready content calendar and posting system</li>
-        <li>Clear dashboards and clean comms — no fluff</li>
       </ul>
       <a href="#contact" class="btn btn-primary">Let’s Talk</a>
     </div>
   </section>
 
-  <!-- ===== BTS STRIP ===== -->
+  <!-- ===== STRIP ===== -->
   <section class="strip reveal" aria-label="Behind the scenes">
     <div class="strip-bg" style="background-image:url('behind-the-scenes.jpg')"></div>
     <div class="container">
       <h3>Content That Feels Native, Not Ads</h3>
-      <p>Shot like social, optimized for attention. We capture authentic moments on the lot and turn them into scroll-winning media.</p>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title reveal">Client Success Stories</h2>
-      </div>
-
-      <div class="grid testimonial-grid">
-        <blockquote class="tcard card-glass reveal">
-          <div class="avatar" aria-hidden="true">TL</div>
-          <p>“DriveCraft Media transformed our online presence. Sales are up, and engagement has never been better.”</p>
-          <cite>Tyler Lawson — GM, Westview Motors</cite>
-        </blockquote>
-
-        <blockquote class="tcard card-glass reveal">
-          <div class="avatar" aria-hidden="true">JM</div>
-          <p>“Their content engine gave us consistent leads at a lower cost. Professional, responsive, effective.”</p>
-          <cite>Jessica Martin — Owner, Summit Auto</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA BAND ===== -->
-  <section class="cta-band">
-    <div class="container reveal">
-      <h2>Ready to Grow Your Dealership?</h2>
-      <p>Let’s turn your inventory into high-performing creative and your followers into booked test drives.</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Book a Strategy Call</a>
+      <p>Shot like social, optimized like ads. We capture authentic moments on the lot and turn them into scroll-winning media.</p>
     </div>
   </section>
 
   <!-- ===== FAQ ===== -->
   <section id="faq" class="section">
     <div class="container">
-      <div class="section-head">
-        <h2 class="section-title reveal">FAQ</h2>
-      </div>
-
+      <h2 class="section-title reveal">FAQ</h2>
       <div class="faq">
-        <details class="faq-item card-glass reveal">
-          <summary>How fast will we see traction?</summary>
-          <p>Most dealers see movement within 2–4 weeks once the creative cadence is live. It compounds with consistency.</p>
+        <details class="faq-item reveal">
+          <summary>How fast will we see results?</summary>
+          <p>Most dealers see traction within 2–4 weeks once creative and campaigns are live. It compounds with consistency.</p>
         </details>
-        <details class="faq-item card-glass reveal">
+        <details class="faq-item reveal">
+          <summary>Do you also run Facebook ads?</summary>
+          <p>Yes—Meta includes both Instagram and Facebook. We run full-funnel campaigns and optimize weekly.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>What do you need from us to start?</summary>
+          <p>Brand access, inventory highlights, and a clear monthly goal (leads, test drives, specific models).</p>
+        </details>
+        <details class="faq-item reveal">
           <summary>Can you work with our in-house team?</summary>
-          <p>Yes. We integrate, share a content plan, and provide creative direction and performance insights.</p>
-        </details>
-        <details class="faq-item card-glass reveal">
-          <summary>Do you cover Facebook too?</summary>
-          <p>Instagram-first, with Facebook extensions where it makes sense for reach and conversions.</p>
-        </details>
-        <details class="faq-item card-glass reveal">
-          <summary>What do you need from us?</summary>
-          <p>Brand access, inventory highlights, visual preferences, and a clear monthly goal.</p>
+          <p>100%. We’ll integrate with your team and provide a content calendar, creative direction, and insights.</p>
         </details>
       </div>
     </div>
@@ -225,22 +182,16 @@
       <div class="contact-copy reveal">
         <h2>Let’s Grow Your Dealership Together</h2>
         <p>Have a question or ready to get started? Contact us.</p>
-
         <div class="mini-cards">
           <div class="mini-card"><span class="dot"></span><strong>Instagram-first</strong><small>Reels, stories, carousels</small></div>
-          <div class="mini-card"><span class="dot"></span><strong>Creative Engine</strong><small>Plan → shoot → edit → post</small></div>
-          <div class="mini-card"><span class="dot"></span><strong>Simple Comms</strong><small>Fast edits, clear next steps</small></div>
+          <div class="mini-card"><span class="dot"></span><strong>Performance Meta</strong><small>Leads, test drives, sales</small></div>
+          <div class="mini-card"><span class="dot"></span><strong>Done-for-you Posting</strong><small>Calendar + management</small></div>
         </div>
       </div>
 
       <form class="contact-form reveal"
             action="https://formsubmit.co/thedrivecraftmedia@gmail.com"
             method="POST">
-        <input type="hidden" name="_next" value="thankyou.html">
-        <input type="hidden" name="_subject" value="🚗 New Lead from DriveCraft Media">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none">
-
         <label>
           <span>Name</span>
           <input type="text" name="name" placeholder="Your name" required />
@@ -254,8 +205,13 @@
           <textarea rows="5" name="message" placeholder="Tell us about your goals…" required></textarea>
         </label>
 
+        <!-- Hidden controls -->
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_subject" value="🚗 New Lead from DriveCraft Media">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+
         <button class="btn btn-primary" type="submit">Submit</button>
-        <p class="form-note">Note: sending requires http/https (won’t send from a file:// tab).</p>
       </form>
     </div>
   </section>
@@ -263,8 +219,8 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="wordmark small"><span class="logo-dot"></span> DriveCraft&nbsp;Media</span>
-      <nav class="foot-nav" aria-label="Footer">
+      <span class="wordmark small">DriveCraft&nbsp;Media</span>
+      <nav class="foot-nav">
         <a href="#services">Services</a>
         <a href="#cases">Cases</a>
         <a href="#about">About</a>
